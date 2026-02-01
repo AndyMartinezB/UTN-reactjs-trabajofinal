@@ -2,8 +2,8 @@ import { createContext, use, useContext, useState, useEffect } from "react";
 import {
   onAuthStateChanged,
   createUserWithEmailAndPassword,
-  singInWithEmailAndPassword,
-  singOut,
+  signInWithEmailAndPassword,
+  signOut,
 } from "firebase/auth";
 import { auth } from "../config/firebase.js";
 
@@ -17,11 +17,11 @@ const AuthProvider = ({ children }) => {
   };
 
   const login = async (email, password) => {
-    return await singInWithEmailAndPassword(auth, email, password);
+    return await signInWithEmailAndPassword(auth, email, password);
   };
 
   const logout = async () => {
-    return await singOut(auth);
+    return await signOut(auth);
   };
 
   useEffect(() => {
@@ -38,4 +38,9 @@ const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+const useAuth = () => {
+  return useContext(AuthContext);
+};
+
 export { AuthProvider, useAuth };

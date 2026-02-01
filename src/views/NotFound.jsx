@@ -1,4 +1,4 @@
-import "../styles/views/notfound.css";
+import "../styles/views/notFound.css";
 const NotFound = () => {
   return <h1>404 - Page Not Found</h1>;
 };
