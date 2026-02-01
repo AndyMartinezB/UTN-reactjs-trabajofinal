@@ -25,7 +25,7 @@ const Login = () => {
     try {
       await login(formData.email, formData.password);
       setSuccess("Login successful!");
-      Maps("/");
+      navigate("/");
     } catch (error) {
       setError("Failed to login. Please check your credentials.");
     }

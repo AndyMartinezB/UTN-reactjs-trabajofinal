@@ -1,5 +1,13 @@
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const Register = () => {
-  return <h1>Register Page</h1>;
+  return (
+    <>
+      <Header />
+      <h2>Register Page</h2>
+      <Footer />
+    </>
+  );
 };
 
 export default Register;

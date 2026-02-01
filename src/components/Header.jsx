@@ -31,6 +31,7 @@ const Header = () => {
             </>
           )}
         </ul>
+        {user && <button onClick={logout}>Cerrar sesión</button>}
       </nav>
     </header>
   );
