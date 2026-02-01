@@ -20,6 +20,13 @@ const Home = () => {
           del medio ambiente a través de la jardinería con plantas nativas.
         </p>
       </div>
+      <div className="products-placeholder">
+        <h3 className="products-title">Próximamente: Catálogo de Productos</h3>
+        <p className="products-description">
+          Estamos trabajando para traerte un catálogo completo de nuestras
+          plantas nativas. ¡Mantente atento a las novedades!
+        </p>
+      </div>
       <Footer />
     </>
   );
