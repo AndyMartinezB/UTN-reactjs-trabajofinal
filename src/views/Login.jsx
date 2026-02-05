@@ -34,8 +34,8 @@ const Login = () => {
     <>
       <Header />
       <h2>Login Page</h2>
-      <main className="login-main">
-        <section className="login-card">
+      <main className="login/register-main">
+        <section className="login/register-card">
           <form onSubmit={handleSubmit}>
             <div>
               <label>Email:</label>
