@@ -1,0 +1,126 @@
+/* Hereda variables de index.css */
+
+.header {
+  background-color: var(--color-white);
+  border-bottom: 4px solid var(--color-primary); /* Borde verde inferior */
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos bajen en celular */
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-title {
+  font-size: 1.9rem;
+  color: var(--color-primary-dark);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.header-subtitle {
+  font-family: var(--font-main);
+  font-style: italic;
+  color: var(--color-earth);
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Botón de cerrar sesión en el header */
+.header nav button {
+  background-color: transparent;
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+}
+
+.header nav button:hover {
+  background-color: var(--color-error);
+  color: white;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .header-subtitle {
+    margin-right: 0;
+    border-left: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+}
+/* --- BLOQUE MARCA (LOGO + TITULOS) --- */
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Logo inspirado en el ave */
+.header-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  padding: 4px;
+
+  /* Sutil guiño al rojo del ave */
+  border: 2px solid #c62828;
+
+  /* Separación visual elegante */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor de textos */
+.header-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .header-brand {
+    flex-direction: column;
+  }
+
+  .header-logo {
+    width: 64px;
+    height: 64px;
+  }
+}

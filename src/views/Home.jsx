@@ -108,10 +108,6 @@ const Home = () => {
         </section>
         <section className="products-placeholder">
           <h3 className="products-title">Catálogo de Productos</h3>
-          <p className="products-description">
-            Estamos trabajando para traerte un catálogo completo de nuestras
-            plantas nativas. ¡Mantente atento a las novedades!
-          </p>
           <div className="products-list">
             {products.map((product) => (
               <div key={product.id}>

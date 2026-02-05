@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import "../styles/views/login-register.css";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Login = () => {
   return (
     <>
       <Header />
-      <h2>Login Page</h2>
+      <h2>Iniciar sesión</h2>
       <main className="login/register-main">
         <section className="login/register-card">
           <form onSubmit={handleSubmit}>
