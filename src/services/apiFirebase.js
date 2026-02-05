@@ -42,4 +42,4 @@ const deleteProduct = async (id) => {
   return id;
 };
 
-export { getAllProducts, addProduct, updateProduct, deleteProduct };
+export { addProduct, getAllProducts, updateProduct, deleteProduct };
