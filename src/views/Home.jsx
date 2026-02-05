@@ -37,7 +37,7 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (editingProduct) {
-      await updateProduct(editingProduct.id, formData);
+      const res = await updateProduct(editingProduct.id, formData);
       const updatedProducts = products.map((product) =>
         product.id === editingProduct.id ? res : product,
       );
