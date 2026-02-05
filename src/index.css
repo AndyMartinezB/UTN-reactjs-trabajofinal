@@ -1,68 +1,105 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Paleta de Colores - Vivero Nativo */
+  /* Verde principal (hojas/vegetación) */
+  --color-primary: #2e7d32;
+  /* Verde más oscuro para hover/acciones */
+  --color-primary-dark: #1b5e20;
+  /* Tono tierra/madera para contrastes */
+  --color-earth: #795548;
+  /* Fondo claro (crema suave, no blanco puro para no cansar la vista) */
+  --color-bg-light: #f1f8e9;
+  /* Blanco puro para tarjetas/contenedores */
+  --color-white: #ffffff;
+  /* Texto principal (gris muy oscuro) */
+  --color-text: #212121;
+  /* Texto secundario (gris medio) */
+  --color-text-light: #757575;
+  /* Color de alerta/error */
+  --color-error: #d32f2f;
+  /* Color de éxito */
+  --color-success: #388e3c;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Espaciado y Bordes */
+  --border-radius: 8px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Fuentes */
+  --font-main: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+  --font-display:
+    "Georgia", "Times New Roman", serif; /* Para títulos con toque natural */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: var(--font-main);
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  line-height: 1.6;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Tipografía general */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Estilos base para inputs y botones para reutilizar */
+input,
+textarea {
+  font-family: var(--font-main);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-main);
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease,
+    transform 0.1s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:active {
+  transform: scale(0.98);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utilidad para el contenido principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 160px); /* Ajuste aproximado para header/footer */
+}
+
+/* Imágenes responsivas por defecto */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
