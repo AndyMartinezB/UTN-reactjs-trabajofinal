@@ -11,6 +11,7 @@ const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const register = async (email, password) => {
     return await createUserWithEmailAndPassword(auth, email, password);
@@ -28,13 +29,14 @@ const AuthProvider = ({ children }) => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log("AuthContext detectó usuario:", currentUser);
       setUser(currentUser);
+      setLoading(false);
     });
     return () => {
       unsubscribe();
     };
   }, []);
   return (
-    <AuthContext.Provider value={{ user, register, login, logout }}>
+    <AuthContext.Provider value={{ user, register, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
