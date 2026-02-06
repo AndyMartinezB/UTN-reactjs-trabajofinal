@@ -11,6 +11,7 @@ import {
 
 const Home = () => {
   const [products, setProducts] = useState([]);
+  const [expandedDescriptions, setExpandedDescriptions] = useState({});
   const [editingProduct, setEditingProduct] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -21,6 +22,13 @@ const Home = () => {
     image: "",
     description: "",
   });
+
+  const toggleDescription = (id) => {
+    setExpandedDescriptions((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -130,7 +138,21 @@ const Home = () => {
                     {product.scientificName}
                   </p>
                   <p className="product-category">{product.category}</p>
-                  <p className="product-description">{product.description}</p>
+                  <p
+                    className={`product-description ${
+                      expandedDescriptions[product.id] ? "expanded" : ""
+                    }`}
+                  >
+                    {product.description}
+                  </p>
+
+                  <button
+                    className="see-more-button"
+                    onClick={() => toggleDescription(product.id)}
+                  >
+                    {expandedDescriptions[product.id] ? "Ver menos" : "Ver más"}
+                  </button>
+
                   <p className="product-units">
                     Unidades disponibles: {product.units}
                   </p>

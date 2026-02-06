@@ -99,6 +99,22 @@ const AboutThis = () => {
                 de Firebase antes de renderizar las rutas.
               </p>
             </div>
+            <div className="challenge-card">
+              <h4>Uniformidad visual en el catálogo de productos</h4>
+              <p>
+                <strong>Problema:</strong> Las descripciones de los productos
+                tenían longitudes variables, lo que provocaba tarjetas de
+                diferentes alturas y un diseño desordenado en el catálogo,
+                afectando la legibilidad y la experiencia de usuario.
+                <br />
+                <strong>Solución:</strong> Se decidió limitar inicialmente la
+                cantidad de texto visible en cada tarjeta y agregar un control
+                de <em>“Ver más / Ver menos”</em>. Esta decisión permitió
+                mantener una grilla visualmente uniforme, mejorar la
+                escaneabilidad del catálogo y darle al usuario control sobre
+                cuándo expandir la información sin romper el layout.
+              </p>
+            </div>
           </section>
           <section className="about-section about-credits">
             <h3>🌱 Créditos e Inspiración</h3>

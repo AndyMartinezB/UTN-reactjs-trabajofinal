@@ -127,7 +127,9 @@
 
 /* FORM */
 .add-product-form-section {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
 }
 
 .form-title {
@@ -162,4 +164,31 @@
   .home-container {
     padding: 3rem 1.5rem;
   }
+}
+.product-description {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* cantidad de líneas visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-description.expanded {
+  -webkit-line-clamp: unset;
+}
+.see-more-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.25rem 1rem;
+  text-align: left;
+}
+
+.see-more-button:hover {
+  text-decoration: underline;
 }
