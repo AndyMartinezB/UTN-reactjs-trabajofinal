@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <>
       <Header />
-      <h2>404 - Page Not Found</h2>
+      <h2>404 - Página no encontrada</h2>
       <Footer />
     </>
   );

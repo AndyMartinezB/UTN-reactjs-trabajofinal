@@ -1,0 +1,81 @@
+/* Contenedor principal centrado */
+.login\/register-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Resta altura aprox de header/footer */
+  padding: 2rem;
+  background-image: linear-gradient(to bottom, var(--color-bg-light), #e0f2f1);
+}
+
+/* Título H2 fuera de la tarjeta (ajuste visual opcional) */
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--color-primary-dark);
+}
+
+/* La tarjeta del formulario */
+.login\/register-card {
+  background-color: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 450px; /* Ancho máximo para que no se estire demasiado */
+  border-top: 5px solid var(--color-primary); /* Detalle estético superior */
+}
+
+/* Estilos internos del formulario */
+.login\/register-card form div {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login\/register-card label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.login\/register-card input:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: transparent;
+}
+
+/* Botón de envío */
+.login\/register-card button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.login\/register-card button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Mensajes de feedback */
+.login\/register-card p {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+/* Ajuste específico para mensaje de error (fondo suave rojizo) */
+.login\/register-card p[style*="red"] {
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+}
+
+/* Ajuste específico para mensaje de éxito (fondo suave verdoso) */
+.login\/register-card p[style*="green"] {
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+}

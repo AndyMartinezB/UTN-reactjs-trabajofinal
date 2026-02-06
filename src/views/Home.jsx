@@ -14,6 +14,8 @@ const Home = () => {
   const [editingProduct, setEditingProduct] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
+    scientificName: "",
+    category: "",
     units: 0,
     value: 0,
     image: "",
@@ -46,6 +48,8 @@ const Home = () => {
     } else {
       const addedProduct = await addProduct({
         name: formData.name,
+        scientificName: formData.scientificName,
+        category: formData.category,
         units: parseInt(formData.units),
         value: parseFloat(formData.value),
         image: formData.image,
@@ -55,6 +59,8 @@ const Home = () => {
     }
     setFormData({
       name: "",
+      scientificName: "",
+      category: "",
       units: 0,
       value: 0,
       image: "",
@@ -66,6 +72,8 @@ const Home = () => {
     setEditingProduct(product);
     setFormData({
       name: product.name,
+      scientificName: product.scientificName,
+      category: product.category,
       units: product.units,
       value: product.value,
       image: product.image,
@@ -108,10 +116,6 @@ const Home = () => {
         </section>
         <section className="products-placeholder">
           <h3 className="products-title">Catálogo de Productos</h3>
-          <p className="products-description">
-            Estamos trabajando para traerte un catálogo completo de nuestras
-            plantas nativas. ¡Mantente atento a las novedades!
-          </p>
           <div className="products-list">
             {products.map((product) => (
               <div key={product.id}>
@@ -122,6 +126,10 @@ const Home = () => {
                     className="product-image"
                   />
                   <h4 className="product-name">{product.name}</h4>
+                  <p className="product-scientific-name">
+                    {product.scientificName}
+                  </p>
+                  <p className="product-category">{product.category}</p>
                   <p className="product-description">{product.description}</p>
                   <p className="product-units">
                     Unidades disponibles: {product.units}
@@ -155,6 +163,22 @@ const Home = () => {
               name="name"
               placeholder="Nombre del producto"
               value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="text"
+              name="scientificName"
+              placeholder="Nombre científico"
+              value={formData.scientificName}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="text"
+              name="category"
+              placeholder="Categoría"
+              value={formData.category}
               onChange={handleChange}
               required
             />

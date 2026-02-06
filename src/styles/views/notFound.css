@@ -1,0 +1,23 @@
+/* Heredamos estilos de main, pero centramos el contenido específico */
+main:has(.not-found-title) {
+  /* Selector moderno, o simplemente el contenedor */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+}
+
+/* Si decides agregar un párrafo o link de volver después */
+.not-found-text {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}

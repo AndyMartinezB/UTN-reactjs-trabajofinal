@@ -1,0 +1,92 @@
+/* FOOTER GENERAL */
+.footer {
+  background-color: var(--color-earth);
+  color: var(--color-bg-light);
+  margin-top: auto;
+  border-top: 4px solid #c62828; /* acento federal */
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* CONTENEDOR */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* SECCIONES */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* TÍTULOS */
+.footer-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-bg-light);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* TEXTO */
+.footer-section p {
+  color: var(--color-bg-light);
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* REDES */
+.footer-socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.footer-socials a {
+  font-weight: 600;
+  color: var(--color-bg-light);
+  opacity: 0.9;
+  transition:
+    opacity 0.3s ease,
+    text-decoration 0.3s ease;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* AUTOR */
+.footer-author {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+.footer a {
+  color: var(--color-bg-light);
+  opacity: 0.9;
+}
+
+.footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
