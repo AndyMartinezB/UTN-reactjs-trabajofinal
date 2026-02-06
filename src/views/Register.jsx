@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/views/login-register.css";
+
 const Register = () => {
   const [formData, setFormData] = useState({
     email: "",

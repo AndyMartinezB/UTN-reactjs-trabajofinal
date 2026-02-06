@@ -17,6 +17,12 @@
   margin: 0;
   line-height: 1.1;
 }
+.header-title:hover {
+  color: var(--color-error);
+  text-decoration-thickness: 2px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
 
 .header-subtitle {
   font-family: var(--font-main);
@@ -27,16 +33,19 @@
   letter-spacing: 0.5px;
 }
 
-.header-nav {
+.web-nav,
+.user-nav {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.header-nav a {
+.web-nav a,
+.user-nav a,
+.user-name {
   text-decoration: none;
   font-weight: 600;
   color: var(--color-text);
@@ -44,12 +53,15 @@
   transition: color 0.3s ease;
 }
 
-.header-nav a:hover {
-  color: var(--color-primary);
+.web-nav a:hover,
+.user-nav a:hover {
+  color: var(--color-error);
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
-
+.user-nav {
+  margin-left: auto; /* Empuja el nav de usuario a la derecha */
+}
 /* Botón de cerrar sesión en el header */
 .header nav button {
   background-color: transparent;
@@ -79,7 +91,7 @@
     margin-bottom: 1rem;
   }
 
-  .header-nav {
+  .web-nav {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
@@ -94,8 +106,8 @@
 
 /* Logo inspirado en el ave */
 .header-logo {
-  width: 56px;
-  height: 56px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
   border-radius: 50%;
   background-color: var(--color-white);

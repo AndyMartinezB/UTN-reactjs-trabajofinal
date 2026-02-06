@@ -13,13 +13,15 @@ const Header = () => {
           className="header-logo"
         />
         <div className="header-titles">
-          <h1 className="header-title">Vivero Federal​</h1>
+          <h1 className="header-title">
+            <Link to="/">Vivero Federal</Link>​
+          </h1>
           <p className="header-subtitle">Plantas nativas</p>
         </div>
       </div>
 
       <nav>
-        <ul className="header-nav">
+        <ul className="web-nav">
           {user && (
             <li>
               <Link to="/">Inicio</Link>
@@ -28,22 +30,26 @@ const Header = () => {
           <li>
             <Link to="/about">Sobre nosotros</Link>
           </li>
-
-          {!user && (
-            <>
-              <li>
-                <Link to="/register">Registrarse</Link>
-              </li>
-              <li>
-                <Link to="/login">Iniciar sesión</Link>
-              </li>
-            </>
-          )}
         </ul>
+      </nav>
+      <nav className="user-nav">
+        {!user && (
+          <>
+            <li>
+              <Link to="/register">Registrarse</Link>
+            </li>
+            <li>
+              <Link to="/login">Iniciar sesión</Link>
+            </li>
+          </>
+        )}
         {user && (
-          <button onClick={logout} className="logout-button">
-            Cerrar sesión
-          </button>
+          <>
+            <p className="user-name">{user.email}</p>
+            <button onClick={logout} className="logout-button">
+              Cerrar sesión
+            </button>
+          </>
         )}
       </nav>
     </header>
