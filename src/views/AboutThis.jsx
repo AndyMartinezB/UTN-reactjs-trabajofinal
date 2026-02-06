@@ -11,8 +11,15 @@ const AboutThis = () => {
           <section className="about-header">
             <h2>Sobre este Proyecto</h2>
             <p className="about-intro">
-              Trabajo Final Integrador para el curso de React JS. Esta
-              aplicación es un dashboard de gestión para un Vivero de Plantas
+              Trabajo Final Integrador para el curso de{" "}
+              <a
+                href="https://sceu.frba.utn.edu.ar/e-learning/detalle/curso/35189/curso-de-desarrollo-en-react-js?gad_source=1&gad_campaignid=23095914428&gbraid=0AAAAAD-5DJvz6FlieD825bBJhNoe1Zwou&gclid=CjwKCAiAv5bMBhAIEiwAqP9GuBTmWL6XcPV2AmwUVX6SKzR8qtzgGt8vztkVN0ISPzw9km5-FPImmxoCUaQQAvD_BwE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Desarrollo en React JS de la UTN.BA
+              </a>
+              . Esta aplicación es un sitio de gestión para un Vivero de Plantas
               Nativas, permitiendo administrar un catálogo de productos con
               persistencia en la nube.
             </p>
@@ -91,6 +98,61 @@ const AboutThis = () => {
                 <code>loading</code> en el AuthContext para esperar la respuesta
                 de Firebase antes de renderizar las rutas.
               </p>
+            </div>
+          </section>
+          <section className="about-section about-credits">
+            <h3>🌱 Créditos e Inspiración</h3>
+
+            <p>
+              Este proyecto fue inspirado en el trabajo del{" "}
+              <strong>Vivero Churrinche</strong>, un vivero dedicado a la
+              producción y difusión de plantas nativas de la región de Córdoba.
+            </p>
+
+            <p>
+              Las imágenes, descripciones de productos y la selección de
+              especies utilizadas en esta aplicación se basan en el catálogo y
+              el enfoque educativo del Vivero Churrinche, cuyo trabajo es una
+              referencia en el ámbito de la restauración ecológica y la
+              promoción de la flora nativa.
+            </p>
+
+            <p>
+              Este dashboard fue desarrollado con fines{" "}
+              <strong>educativos y académicos</strong>, como parte de un trabajo
+              final, y no representa una tienda oficial ni tiene fines
+              comerciales.
+            </p>
+
+            <div className="credits-highlight">
+              <p>
+                🌿 Si te interesa aprender más sobre plantas nativas o adquirir
+                ejemplares, te recomendamos visitar y seguir el trabajo de
+                vivero Churrinche:
+              </p>
+
+              <ul className="credits-links">
+                <li>
+                  🌐 Sitio web:{" "}
+                  <a
+                    href="https://viverochurrinche.empretienda.com.ar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Vivero Churrinche
+                  </a>
+                </li>
+                <li>
+                  📸 Instagram:{" "}
+                  <a
+                    href="https://instagram.com/churrinche_nativas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @viverochurrinche
+                  </a>
+                </li>
+              </ul>
             </div>
           </section>
         </div>

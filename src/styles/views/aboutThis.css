@@ -95,3 +95,60 @@
     font-size: 2rem;
   }
 }
+
+/* --- CRÉDITOS E INSPIRACIÓN --- */
+.about-credits {
+  background-color: var(--color-bg-light);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-primary);
+}
+
+.about-credits p {
+  margin-bottom: 1rem;
+}
+
+/* Bloque destacado */
+.credits-highlight {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Links */
+.credits-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.credits-links li {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.credits-links a {
+  color: var(--color-primary-dark);
+}
+
+.credits-links a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-credits {
+    padding: 1.5rem;
+  }
+}
+.about-intro a {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.about-intro a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
