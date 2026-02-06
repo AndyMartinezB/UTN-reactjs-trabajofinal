@@ -9,7 +9,7 @@ const AboutThis = () => {
       <main className="about-main">
         <div className="about-container">
           <section className="about-header">
-            <h2>Sobre el Proyecto</h2>
+            <h2>Sobre este Proyecto</h2>
             <p className="about-intro">
               Trabajo Final Integrador para el curso de React JS. Esta
               aplicación es un dashboard de gestión para un Vivero de Plantas
