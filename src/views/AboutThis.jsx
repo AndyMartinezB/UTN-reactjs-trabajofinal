@@ -113,8 +113,7 @@ const AboutThis = () => {
               Las imágenes, descripciones de productos y la selección de
               especies utilizadas en esta aplicación se basan en el catálogo y
               el enfoque educativo del Vivero Churrinche, cuyo trabajo es una
-              referencia en el ámbito de la restauración ecológica y la
-              promoción de la flora nativa.
+              referencia en la promoción de la flora nativa.
             </p>
 
             <p>
