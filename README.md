@@ -90,7 +90,7 @@ Durante el desarrollo se abordaron situaciones clave:
 
 Este proyecto tiene fines puramente educativos.
 
-La temática, imágenes y datos de especies nativas están inspirados en el **Vivero Churrinche** (Córdoba), cuyo trabajo en la difusión de flora nativa se toma como referencia para este ejercicio académico. +info dentro del componente AboutThis.
+La temática de especies nativas están inspirada en el **Vivero Churrinche** (Córdoba), cuyo trabajo en la difusión de flora nativa se toma como referencia para este ejercicio académico. Se han utilizado sus datos e imagenes para este proyecto. +info dentro del componente AboutThis.
 
 ---
 
