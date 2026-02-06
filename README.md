@@ -2,7 +2,7 @@
 
 Este repositorio contiene el **Trabajo Final Integrador** para el curso de **Desarrollo en React JS** de la UTN.BA.
 
-El proyecto consiste en una aplicación web llamada **Vivero Nativas**, que permite la administración de un catálogo de plantas nativas, integrando autenticación de usuarios, base de datos en tiempo real y navegación protegida.
+El proyecto consiste en una aplicación web llamada **Vivero Nativas**, que permite la administración de un catálogo de plantas nativas, integrando autenticación de usuarios, base de datos y navegación protegida.
 
 ## 📋 Descripción del Proyecto
 
@@ -16,14 +16,14 @@ El objetivo principal es ofrecer un **Dashboard protegido** donde un usuario aut
 - **Rutas Protegidas:** Acceso restringido al Dashboard mediante validación de sesión en `AuthContext`.
 - **Gestión de Datos:** Carga y administración de plantas nativas en tiempo real.
 - **Feedback de Usuario:** Indicadores de carga y validaciones visuales.
-- **Diseño:** Interfaz responsive creada con **CSS nativo** (sin frameworks externos).
+- **Diseño:** Interfaz responsive creada con **CSS nativo**.
 
 ## 🛠 Tecnologías Utilizadas
 
 - **Frontend:** React JS (Vite)
 - **Navegación:** React Router DOM
 - **Backend (BaaS):** Firebase (Authentication & Firestore)
-- **Estilos:** CSS Nativo (Módulos y Variables)
+- **Estilos:** CSS Nativo
 
 ## 🚀 Instalación y Ejecución
 
@@ -63,10 +63,10 @@ npm run dev
 
 ## 📂 Estructura del Proyecto
 
-El código está organizado siguiendo buenas prácticas de separación de responsabilidades:
+El código está organizado de la siguiente manera:
 
-- `/components`: Componentes reutilizables (Header, Footer, ProtectedRoute, Forms).
-- `/views`: Páginas principales (Home, Login, Register, Dashboard, About).
+- `/components`: Componentes reutilizables (Header, Footer, ProtectedRoute).
+- `/views`: Páginas principales (Home, Login, Register, AboutThis).
 - `/context`: `AuthContext.jsx` para el manejo global del estado de sesión.
 - `/services`: Lógica de conexión con Firebase y funciones asíncronas.
 - `/styles`: Archivos CSS organizados por módulos.
@@ -90,10 +90,10 @@ Durante el desarrollo se abordaron situaciones clave:
 
 Este proyecto tiene fines puramente educativos.
 
-La temática, imágenes y datos de especies nativas están inspirados en el **Vivero Churrinche** (Córdoba), cuyo trabajo en la difusión de flora nativa se toma como referencia para este ejercicio académico.
+La temática, imágenes y datos de especies nativas están inspirados en el **Vivero Churrinche** (Córdoba), cuyo trabajo en la difusión de flora nativa se toma como referencia para este ejercicio académico. +info dentro del componente AboutThis.
 
 ---
 
 **Autor:** Andrés Martínez Bologna  
 **Curso:** Desarrollo en React JS - UTN.BA  
-**Año:** 2025
+**Año:** 2026
