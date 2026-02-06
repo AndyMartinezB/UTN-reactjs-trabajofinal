@@ -14,6 +14,8 @@ const Home = () => {
   const [editingProduct, setEditingProduct] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
+    scientificName: "",
+    category: "",
     units: 0,
     value: 0,
     image: "",
@@ -57,6 +59,8 @@ const Home = () => {
     }
     setFormData({
       name: "",
+      scientificName: "",
+      category: "",
       units: 0,
       value: 0,
       image: "",

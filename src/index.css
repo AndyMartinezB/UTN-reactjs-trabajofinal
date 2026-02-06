@@ -7,8 +7,9 @@
   --color-white: #ffffff;
   --color-text: #212121;
   --color-text-light: #757575;
-  --color-error: #d32f2f;
+  --color-error: #c62828;
   --color-success: #388e3c;
+  --color-federal-light: #d06030e8;
 
   /* UI */
   --border-radius: 8px;

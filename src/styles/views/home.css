@@ -70,7 +70,16 @@
   font-size: 1.25rem;
   padding: 1rem 1rem 0.25rem;
 }
-
+.product-scientific-name {
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  font-style: italic;
+  color: var(--color-earth);
+}
+.product-category {
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+}
 .product-description {
   padding: 0 1rem;
   font-size: 0.95rem;
@@ -107,7 +116,7 @@
 }
 
 .update-button {
-  background-color: var(--color-earth);
+  background-color: var(--color-federal-light);
   color: white;
 }
 
