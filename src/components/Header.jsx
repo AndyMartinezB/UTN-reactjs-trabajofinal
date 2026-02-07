@@ -8,13 +8,13 @@ const Header = () => {
     <header className="header">
       <div className="header-brand">
         <img
-          src="/images/federal.png"
+          src={`${import.meta.env.BASE_URL}images/federal.png`}
           alt="Ave Federal"
           className="header-logo"
         />
         <div className="header-titles">
           <h1 className="header-title">
-            <Link to="/">Vivero Federal</Link>​
+          <Link to="/">Vivero Federal</Link>
           </h1>
           <p className="header-subtitle">Plantas nativas</p>
         </div>
