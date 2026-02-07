@@ -1,6 +1,7 @@
 import "../styles/components/header.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
+import logo from "../assets/federal.png";
 
 const Header = () => {
   const { logout, user } = useAuth();
@@ -8,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="header-brand">
         <img 
-          src="/images/federal.png"
+          src={logo}
           alt="Ave Federal"
           className="header-logo"
         />
