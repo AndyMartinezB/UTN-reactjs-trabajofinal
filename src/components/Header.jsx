@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-brand">
-        <img
-          src={`${import.meta.env.BASE_URL}images/federal.png`}
+        <img 
+          src="/images/federal.png"
           alt="Ave Federal"
           className="header-logo"
         />
